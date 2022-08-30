@@ -1,7 +1,7 @@
 import React from "react";
 import { Jogo } from "./styles";
 import Jogos from "./jogos";
-
+import Footer from "../../components/footer/index";
 const jogos = [
   {
     nome: "Bloodborne",
@@ -42,6 +42,7 @@ const Topjogos = () => {
   return (
     <Jogo>
       <ul className="container">{ListaJogos}</ul>
+      <Footer />
     </Jogo>
   );
 };

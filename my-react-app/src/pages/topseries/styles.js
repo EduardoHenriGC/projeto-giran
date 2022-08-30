@@ -113,7 +113,7 @@ export const Serie = styled.div`
     }
     .video-container {
       width: 98%;
-      height: 300px;
+      height: 270px;
       margin: 0 auto;
     }
   }
