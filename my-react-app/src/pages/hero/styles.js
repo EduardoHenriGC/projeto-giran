@@ -4,8 +4,8 @@ import mk from "../../assets/bg-mk.jpg";
 
 export const Heros = styled.div`
   .hero-menu {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)),
-      url(${bg});
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)),
+      url("https://images4.alphacoders.com/119/1194463.jpg");
     background-position: top;
     background-size: cover;
 

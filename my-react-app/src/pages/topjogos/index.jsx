@@ -1,5 +1,5 @@
 import React from "react";
-import { Jogo } from "./styles";
+import { Pages } from "../Pages";
 import Jogos from "./jogos";
 import Footer from "../../components/footer/index";
 const jogos = [
@@ -40,10 +40,10 @@ const ListaJogos = jogos.map((c) => <Jogos jogos={c} />);
 
 const Topjogos = () => {
   return (
-    <Jogo>
+    <Pages>
       <ul className="container">{ListaJogos}</ul>
       <Footer />
-    </Jogo>
+    </Pages>
   );
 };
 

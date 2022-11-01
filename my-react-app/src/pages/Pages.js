@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Filme = styled.div`
+export const Pages = styled.div`
   .container {
     width: 100%;
     list-style: none;
@@ -86,6 +86,7 @@ export const Filme = styled.div`
       width: 111px;
 
       margin-top: 8px;
+      text-align: center;
     }
     .video-container {
       width: 98%;
@@ -101,7 +102,8 @@ export const Filme = styled.div`
       margin: 0 auto;
     }
     img {
-      width: 90%;
+      width: 92%;
+      margin-bottom: 10px;
     }
     h2 {
       font-size: 1.6rem;
@@ -109,14 +111,15 @@ export const Filme = styled.div`
       padding-top: 50px;
     }
     span {
-      font-size: 1.1rem;
+      font-size: 1.2rem;
+      font-weight: 400;
       width: 100%;
       margin: 0 auto;
-      text-align: center;
+      text-align: left;
     }
 
     .container-sinopse {
-      width: 90%;
+      width: 98%;
       margin: 0 auto;
       text-align: center;
     }

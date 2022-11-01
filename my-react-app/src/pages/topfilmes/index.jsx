@@ -1,6 +1,6 @@
 import React from "react";
 import Lista from "./filmes";
-import { Filme } from "./styles";
+import { Pages } from "../Pages";
 import Footer from "../../components/footer/index";
 
 const filmes = [
@@ -42,10 +42,10 @@ const filmes = [
 const ListaFilmes = filmes.map((c) => <Lista filmes={c} />);
 const Topfilmes = () => {
   return (
-    <Filme>
+    <Pages>
       <ul className="container">{ListaFilmes}</ul>
       <Footer />
-    </Filme>
+    </Pages>
   );
 };
 

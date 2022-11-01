@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FiMenu, FiXCircle } from "react-icons/fi";
-import { GiAbstract052 } from "react-icons/gi";
+import { RiGameFill } from "react-icons/ri";
 
 import { Header } from "./styles";
 
@@ -41,7 +41,7 @@ const Navbarmenu = () => {
             {/* Add Logo  */}
             <div className="header__middle__logo">
               <NavLink exact activeClassName="is-active" to="/">
-                <GiAbstract052 className="icon-menu" />
+                <RiGameFill className="icon-menu" />
               </NavLink>
             </div>
 

@@ -1,6 +1,6 @@
 import React from "react";
 import Series from "./series";
-import { Serie } from "./styles";
+import { Pages } from "../Pages";
 import Footer from "../../components/footer/index";
 
 const series = [
@@ -42,10 +42,10 @@ const series = [
 const ListaSeries = series.map((c) => <Series series={c} />);
 const Topseries = () => {
   return (
-    <Serie>
+    <Pages>
       <ul className="container">{ListaSeries}</ul>
       <Footer />
-    </Serie>
+    </Pages>
   );
 };
 
