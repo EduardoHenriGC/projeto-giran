@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Filme = styled.div`
   .container {
+    width: 100%;
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -23,6 +24,10 @@ export const Filme = styled.div`
   }
   img {
     width: 800px;
+    box-shadow: 2px -1px 7px 9px rgba(0, 0, 0, 0.76);
+    -webkit-box-shadow: 2px -1px 7px 9px rgba(0, 0, 0, 0.76);
+    -moz-box-shadow: 2px -1px 7px 9px rgba(0, 0, 0, 0.76);
+    border-radius: 0.25rem;
   }
   .container-sinopse {
     width: 800px;

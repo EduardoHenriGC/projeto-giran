@@ -97,7 +97,7 @@ export const Header = styled.header`
     display: flex;
     width: 100%;
     float: right;
-    border-bottom: 1px dashed lavender;
+
     position: relative;
   }
   .header__middle__logo > a > h1 {

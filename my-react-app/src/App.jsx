@@ -6,14 +6,15 @@ import Topfilmes from "./pages/topfilmes/index";
 import Topjogos from "./pages/topjogos/index";
 import Navbarmenu from "./components/header/index";
 import Hero from "./pages/hero/index";
-import "./index.css";
+import GlobalStyle from "./GlobalStyle";
 
 function App() {
   return (
     <div>
       <Router>
         <Navbarmenu />
-        <hr />
+        <GlobalStyle />
+
         <Routes>
           <Route path="/" element={<Hero />}></Route>
           <Route path="topfilmes" element={<Topfilmes />}></Route>

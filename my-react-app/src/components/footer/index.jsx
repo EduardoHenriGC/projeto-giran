@@ -1,27 +1,29 @@
 import React from "react";
 import { Footercss } from "./styles";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import GitHubIcon from "@mui/icons-material/GitHub";
+import {
+  FaFacebook,
+  FaInstagramSquare,
+  FaTwitter,
+  FaGithub,
+} from "react-icons/fa";
 
-const footer = () => {
+const Footer = () => {
   return (
     <Footercss>
-      <footer>
-        <ul>
-          <FacebookIcon className="lista" />
-          <InstagramIcon className="lista" />
-          <TwitterIcon className="lista" />
-          <GitHubIcon className="lista" />
-          <span>
-            @sem fins empresariais(apenas usando infomações para estudo e
-            prática)
-          </span>
+      <footer id="footer">
+        <ul className="lista-footer">
+          <FaFacebook id="fb" className="lista" />
+          <FaInstagramSquare id="insta" className="lista" />
+          <FaTwitter id="tt" className="lista" />
+          <FaGithub id="git" className="lista" />
         </ul>
+        <br />
+        <span className="footer-span">
+          @sem fins empresariais(apenas usando infomações para estudo e prática)
+        </span>
       </footer>
     </Footercss>
   );
 };
 
-export default footer;
+export default Footer;

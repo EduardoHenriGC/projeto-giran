@@ -26,8 +26,11 @@ const Series = (props) => {
           width="100%"
           height="100%"
           src={props.series.video}
-          title="YouTube video player"
-          allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen="allowfullscreen"
+          mozallowfullscreen="mozallowfullscreen"
+          msallowfullscreen="msallowfullscreen"
+          oallowfullscreen="oallowfullscreen"
+          webkitallowfullscreen="webkitallowfullscreen"
         ></iframe>
       </div>
     </li>
