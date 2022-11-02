@@ -31,7 +31,7 @@ const recomendacao = [
   {
     img: "https://media.hugogloss.uol.com.br/uploads/2022/10/fotojet-43.jpg",
     imgmodal:
-      "https://pyxis.nymag.com/v1/imgs/43e/80c/79c39ecbde9037bc7ecab83b7fc44e7436-recaps-ring.rsquare.w700.jpg",
+      "https://s2.glbimg.com/mTh15XxJbiuQMOuUkmHXA5d8s7c=/0x0:1920x1280/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2022/k/X/tLLeQEQki96CdVKJEPLA/house-of-the-dragon.jpg",
     nome: "House of the dragon",
     descricao:
       "Os apoiadores de Aegon Targaryen entram em conflito com os adeptos de sua meia-irmã, Rhaenyra, pelo trono de Viserys I, seu falecido pai, iniciando uma guerra civil cerca de 200 anos antes dos eventos retratados em Game of Thrones.",

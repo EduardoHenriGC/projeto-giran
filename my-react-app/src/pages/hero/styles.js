@@ -1,6 +1,4 @@
 import styled from "styled-components";
-import bg from "../../assets/bg-goku.jpg";
-import mk from "../../assets/bg-mk.jpg";
 
 export const Heros = styled.div`
   .hero-menu {
@@ -25,7 +23,11 @@ export const Heros = styled.div`
 
     text-align: center;
   }
+  h2 {
+    font-size: 2rem;
 
+    color: #ccc;
+  }
   .gradient {
     color: red;
   }
@@ -48,13 +50,18 @@ export const Heros = styled.div`
     text-align: center;
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 800px) {
     .hero-menu {
       background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)),
-        url(${mk});
+        url("https://i0.wp.com/techwek.com/wp-content/uploads/2021/10/top-papel-de-parede-masculino.jpg?fit=564%2C1002&ssl=1");
       background-position: top;
       background-repeat: no-repeat;
       background-size: cover;
+    }
+  }
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 1.8rem;
     }
   }
 `;

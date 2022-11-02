@@ -9,29 +9,26 @@ export const Container = styled.div`
   margin-top: 18rem;
 
   .btn {
-    background-color: #ddd;
-
+    color: #fff;
     position: absolute;
     bottom: 10px;
-    left: 50%;
+    left: 40%;
 
     font-size: 2.4rem;
     border: none;
     border-radius: 50%;
     cursor: pointer;
     :hover {
-      background-color: #c9ca48;
+      background-color: #fff;
+      color: #222;
       cursor: pointer;
     }
   }
+
   h3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-transform: uppercase;
-    color: #fafafa;
-    font-size: 1.5rem;
-    margin-left: 2.5rem;
+    font-size: 1.4rem;
+    color: #fff;
   }
 
   ul {
@@ -44,12 +41,12 @@ export const Container = styled.div`
     align-items: center;
 
     li {
-      background-color: blue;
       border-radius: 0.25rem;
-      width: 25%;
-      min-width: 270px;
+
+      width: 350px;
       height: 220px;
       display: flex;
+
       text-align: center;
       position: relative;
       margin: 20px;
@@ -58,7 +55,7 @@ export const Container = styled.div`
         width: 100%;
         height: 100%;
         border-radius: 0.25rem;
-        border: 3px solid #131e2f;
+        border: 2px solid #131e2f;
       }
     }
   }
@@ -67,10 +64,11 @@ export const Container = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+
     position: relative;
   }
   .modal-content {
-    background-color: #adbdce;
+    background-color: #fff;
     position: fixed;
     z-index: 1;
     top: 20%;
@@ -90,15 +88,17 @@ export const Container = styled.div`
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    h2 {
+      text-align: center;
+      text-transform: uppercase;
+      color: red;
+      font-size: 1.3rem;
+    }
 
     span {
       font-size: 1.3rem;
       width: 90%;
       margin: 0;
-    }
-
-    h3 {
-      text-transform: uppercase;
     }
   }
   .btn-close {
@@ -107,28 +107,35 @@ export const Container = styled.div`
     top: 8px;
     right: 8px;
     cursor: pointer;
-    color: #fff;
+    color: #111;
     :hover {
       color: red;
     }
   }
   .left-section {
     width: 35%;
-    height: 450px;
+    height: 350px;
     display: flex;
     flex-direction: column;
     text-align: center;
     gap: 10px;
     font-size: 1.2rem;
 
-    margin-left: 1rem;
+    margin-right: 1rem;
     img {
       border-radius: 0.25rem;
       height: 100%;
       width: 100%;
     }
   }
-  @media (min-width: 961px) and (max-width: 1100px) {
+  .left-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+    font-size: 1.1rem;
+  }
+  @media (min-width: 900px) and (max-width: 1100px) {
     width: 100%;
     .modal-content {
       top: 20%;
@@ -141,15 +148,15 @@ export const Container = styled.div`
       justify-content: center;
       width: 100%;
       margin: 0;
+      margin-right: 30px;
 
-      margin-right: 25px;
-    }
-    li {
-      align-items: center;
-      justify-content: center;
+      li {
+        align-items: center;
+        justify-content: center;
+      }
     }
   }
-  @media (max-width: 960px) {
+  @media (max-width: 900px) {
     margin-top: 0;
     justify-content: center;
     align-items: center;
@@ -157,7 +164,8 @@ export const Container = styled.div`
     margin: 0 auto;
 
     .modal-content {
-      top: 80px;
+      z-index: 1;
+      top: 0;
       bottom: 0;
       right: 0;
       left: 0;
@@ -165,19 +173,34 @@ export const Container = styled.div`
       border: none;
       display: flex;
       flex-direction: column;
+      padding: 2rem 0;
     }
-
+    .btn-close {
+      font-size: 40px;
+      left: 20px;
+      top: 20px;
+    }
     ul {
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      width: 100%;
-      height: 65vh;
+      width: 100vw;
+
       margin: 0;
+
+      li {
+        align-items: center;
+        justify-content: center;
+        height: 140px;
+        width: 250px;
+        img {
+          margin-right: 35px;
+        }
+      }
     }
-    li {
-      align-items: center;
-      justify-content: center;
+    .btn {
+      left: 35%;
+      font-size: 33px;
     }
     .right-section {
       height: 70vh;
@@ -195,9 +218,16 @@ export const Container = styled.div`
     }
     .left-info {
       display: flex;
+      flex-direction: row;
       gap: 10px;
       justify-content: space-between;
       font-size: 1rem;
+      margin-bottom: 40px;
+    }
+  }
+  @media (max-width: 768px) {
+    h3 {
+      display: none;
     }
   }
 `;

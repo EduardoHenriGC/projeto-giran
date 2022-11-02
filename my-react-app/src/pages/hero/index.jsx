@@ -7,6 +7,7 @@ const Hero = () => {
   return (
     <Heros>
       <div className="hero-menu">
+        <h2>Bem vindo ao MyRank</h2>
         <BoxMenu />
       </div>
     </Heros>
